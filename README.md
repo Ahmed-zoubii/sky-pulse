@@ -41,7 +41,7 @@
 
 ```bash
 git clone https://github.com/Ahmed-zoubii/sky-pulse.git
-cd sky_pulse
+cd sky-pulse
 ```
 
 2. **Create & activate a virtual environment**:
