@@ -19,7 +19,7 @@ load_dotenv()
 
 BASE_DIR = Path(__file__).resolve().parent.parent
 
-WEATHER_API_KEY = os.getenv('WEATHER_API_KEY', 'dummy_weather_key')
+WEATHER_API_KEY = os.getenv('WEATHER_API_KEY', 'default_weather_key')
 
 # Build paths inside the project like this: BASE_DIR / 'subdir'.
 
