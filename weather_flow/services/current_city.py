@@ -8,3 +8,4 @@ def get_current_city():
         url=f"https://ipinfo.io/json?token={os.environ['IPINFO_API_TOKEN']}",
         timeout=4
     ).json().get('city')
+

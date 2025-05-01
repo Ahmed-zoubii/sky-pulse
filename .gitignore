@@ -15,5 +15,6 @@ db.sqlite3
 *.swo
 
 .venv/
+*.env
 .env
 .idea/
