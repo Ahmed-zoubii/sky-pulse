@@ -19,7 +19,7 @@ load_dotenv()
 
 BASE_DIR = Path(__file__).resolve().parent.parent
 
-WEATHER_API_KEY = os.environ['WEATHER_API_KEY']
+WEATHER_API_KEY = os.getenv('WEATHER_API_KEY', 'dummy_weather_key')
 
 # Build paths inside the project like this: BASE_DIR / 'subdir'.
 
@@ -27,10 +27,10 @@ WEATHER_API_KEY = os.environ['WEATHER_API_KEY']
 # See https://docs.djangoproject.com/en/4.2/howto/deployment/checklist/
 
 # SECURITY WARNING: keep the secret key used in production secret!
-SECRET_KEY = os.environ['SECRET_KEY']
+SECRET_KEY = os.getenv('SECRET_KEY', 'django-insecure-default-key')
 
 # SECURITY WARNING: don't run with debug turned on in production!
-DEBUG = bool(os.environ['DEBUG'])
+DEBUG = os.getenv('DEBUG', 'True').lower() == 'true'
 
 ALLOWED_HOSTS = []
 
