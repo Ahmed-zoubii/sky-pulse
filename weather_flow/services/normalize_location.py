@@ -1,6 +1,5 @@
 import re
 
-from .weather import get_weather_data
 
 def normalize_location(location: str):
     """
