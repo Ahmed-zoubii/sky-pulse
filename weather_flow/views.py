@@ -5,7 +5,6 @@ from rest_framework.exceptions import ValidationError
 from rest_framework.views import APIView
 from rest_framework import status
 from drf_spectacular.utils import extend_schema, OpenApiParameter, OpenApiTypes
-
 from .services import weather, forecasts, normalize_location
 
 def home(request):

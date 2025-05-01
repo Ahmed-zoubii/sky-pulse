@@ -28,12 +28,12 @@ IPINFO_API_TOKEN = os.getenv('IPINFO_API_TOKEN')
 # See https://docs.djangoproject.com/en/4.2/howto/deployment/checklist/
 
 # SECURITY WARNING: keep the secret key used in production secret!
-SECRET_KEY = os.getenv('SECRET_KEY')
+SECRET_KEY = 'gc34h&b4q@a(r4cs(%69etobu*=j-4=kw!v2q8dbn_gxfh03h-'
 
 # SECURITY WARNING: don't run with debug turned on in production!
-DEBUG = os.getenv('DEBUG', 'True').lower() == 'true'
+DEBUG = True
 
-ALLOWED_HOSTS = ['*']
+ALLOWED_HOSTS = []
 
 # Application definition
 
