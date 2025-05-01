@@ -10,6 +10,7 @@
 - [Tech Stack](#tech-stack)
 - [Getting Started](#getting-started)
   - [Installation](#installation)
+  - [Set Up Environment Variables](#set-up-environment-variables)
   - [Running the Application](#running-the-application)
 - [API Endpoints](#api-endpoints)
 - [Usage Examples](#usage-examples)
@@ -67,6 +68,33 @@ cd sky-pulse
 ```bash
 pip install -r requirements.txt
 ```
+### Set Up Environment Variables
+
+To configure the application, you will need to create a `.env` file in the root directory of the project. This file will contain API keys.
+
+1.  **Create the `.env` file:**
+
+    In the root of the project directory, create a new file named `.env`.
+
+2.  **Add Environment Variables:**
+
+    Open the `.env` file and add the following content, replacing the placeholder values with the actual keys:
+
+    ```dotenv
+    WEATHER_API_KEY=weather-api-key
+    IPINFO_API_TOKEN=ipinfo-token
+    ```
+
+    **Important Notes:**
+
+    * **`WEATHER_API_KEY`**:
+        * Sign up at [WeatherAPI](https://www.weatherapi.com/).
+        * Get your API key.
+        * Paste the API key into the `.env` file, assigning it to the `WEATHER_API_KEY` variable.
+    * **`IPINFO_API_TOKEN`**:
+        * Sign up at [ipinfo.io](https://ipinfo.io/).
+        * Get your access token.
+        * Paste the access token into the `.env` file, assigning it to the `IPINFO_API_TOKEN` variable.
 
 ### Running the Application
 
